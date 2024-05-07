@@ -27,6 +27,7 @@ $$
 $$Q = I G_{1}^T G_{2}^T...G_{n-1}^T G_{n}^T $$
 
 - A tedy platí:
+
 $$ A = A_1$$
 $$G_1 A_1 = A_2$$
 $$...$$
@@ -42,11 +43,13 @@ $$\Rightarrow G_n G_{n-1}...G_1 A = R$$
     - Sestaví se Householderova matice $P_k = I - 2vv^T$
     - Aplikuje se Householderova reflexe na A od $k$-tého sloupce, čímž se aktualizuje $A$ na $P_kAP_k$
 - Po aplikaci Householderových reflexí je pak původní matice $A$ převedena na horní trojúhelníkovou matici $R$
+
 $$ A = A_1$$
 $$ A_1 P_1 = A_2$$
 $$...$$
 $$A_{n-1} G_{n-1} = R$$
 $$\Rightarrow A H_1...H_{n-2}H{n-1} = R$$
+
 - Matice $Q$ je výsledkem postupné aplikace všech $P_k$ ($Q = P_1 P_2 ... P_{n-2} P_{n-1}$)
 
 ### Gram-Schmidtův ortogonalizační proces
@@ -62,7 +65,7 @@ $$ A = Q \cdot R$$
     - $v_i = a_i - \sum_{j=1}^{i-1}{proj_{q_j}(a_i)}$, kde $proj_{q_j}(a_i) = (q_j^T a_i)q_j$
     - Znormalizujeme $q_i  = \frac{v_i}{||v_i||}$
     - Výpočet matice R, kde koeficienty jsou dáno jako:
-    - $r_{ij} = q_i^T a_j$ pro $j \geq i $ a $r_{ij} = 0$ pro $j < i$
+    - $r_{ij} = q_i^T a_j$ pro $j \geq i$ a $r_{ij} = 0$ pro $j < i$
 
 
 ### Výpočet vlastních čísel
