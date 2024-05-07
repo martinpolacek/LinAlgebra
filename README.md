@@ -49,9 +49,13 @@ $$\Rightarrow G_n G_{n-1}...G_1 A = R$$
 - Po aplikaci Householderových reflexí je pak původní matice $A$ převedena na horní trojúhelníkovou matici $R$
 
 $$ A = A_1$$
+
 $$ A_1 P_1 = A_2$$
+
 $$...$$
+
 $$A_{n-1} G_{n-1} = R$$
+
 $$\Rightarrow A H_1...H_{n-2}H{n-1} = R$$
 
 - Matice $Q$ je výsledkem postupné aplikace všech $P_k$ ($Q = P_1 P_2 ... P_{n-2} P_{n-1}$)
@@ -100,7 +104,7 @@ Výpočet:
     - Vlastní čísla a vektory $A^TA$ udávají $V$ a singulární čísla Σ
     - Vlastní čísla a vektory $AA^T$ udávají U
 3) Sestavení matice Σ
-    - Diagonální prvky Σ jsou kladné druhé odmocniny vlastních čísel $A^TA$ (nebo AA^T) seřazené sestupně
+    - Diagonální prvky Σ jsou kladné druhé odmocniny vlastních čísel $A^TA$ (nebo $AA^T$) seřazené sestupně
 
 Implementace:
  - Iterujeme přes řádky a sloupce, kdy cílem je z matice $A$ vytvořit horní bidiagonální matici B
