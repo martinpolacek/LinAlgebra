@@ -29,9 +29,13 @@ $$Q = I G_{1}^T G_{2}^T...G_{n-1}^T G_{n}^T $$
 - A tedy platí:
 
 $$ A = A_1$$
+
 $$G_1 A_1 = A_2$$
+
 $$...$$
+
 $$G_n A_n = R$$
+
 $$\Rightarrow G_n G_{n-1}...G_1 A = R$$
 
 
