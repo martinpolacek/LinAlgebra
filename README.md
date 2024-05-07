@@ -74,6 +74,8 @@ $$ A = Q \cdot R$$
     - Znormalizujeme $q_i  = \frac{v_i}{||v_i||}$
     - Výpočet matice R, kde koeficienty jsou dáno jako:
     - $r_{ij} = q_i^T a_j$ pro $j \geq i$ a $r_{ij} = 0$ pro $j < i$
+- Klasický algoritmus projekce odečte najednou, kdy modifikovaný algoritmus je odečítá okamžitě
+    - Lepší numerická stabilita
 
 
 ### Výpočet vlastních čísel
